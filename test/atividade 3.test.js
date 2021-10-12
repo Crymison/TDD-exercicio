@@ -48,4 +48,26 @@ describe('Atividade 3 ex1', () =>{
         expect(res.cargo).toBe("DBA junior");
         expect(res.verifica).toBe(false);
     });
+
+    test('Verificar Salario Testador senior>= 2.000,00', () => {
+        let nome = "Carlos";
+        let email = "Carlos@gmail.com";
+        let salariobase = 3000;
+        let cargo = "Testador"
+        
+        const res = CalculadoradeFuncionarios(nome, email, salariobase, cargo);
+        
+        expect(res.cargo).toBe("Testador senior");
+    });
+
+    test('Verificar Salario Testador junior< 2.000,00', () => {
+        let nome = "Marcos";
+        let email = "Marcos@gmail.com";
+        let salariobase = 1500;
+        let cargo = "Testador"
+        
+        const res = CalculadoradeFuncionarios(nome, email, salariobase, cargo);
+        
+        expect(res.cargo).toBe("Testador junior");
+    });
 });
