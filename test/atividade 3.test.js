@@ -73,25 +73,25 @@ describe('Atividade 3 ex1', () =>{
         expect(res.verifica).toBe(false);
     });
 
-    test('Verificar Salario Gerente >= 5.000,00', () => {
+    test('Verificar Salario Gerente veterano>= 5.000,00', () => {
         let nome = "Marcelo";
         let email = "Marcelo@gmail.com";
         let salariobase = 6000;
         let cargo = "Gerente"
         
-        const res = (nome, email, salariobase, cargo);
+        const res = CalculadoradeFuncionarios(nome, email, salariobase, cargo);
         
-        expect(res.imc).toBe(imc2);
+        expect(res.cargo).toBe("Gerente veterano");
     });
 
-    test('Verificar Salario Gerente < 5.000,00', () => {
+    test('Verificar Salario Gerente novato< 5.000,00', () => {
         let nome = "Victor";
         let email = "Victor@gmail.com";
         let salariobase = 3000;
         let cargo = "Gerente"
         
-        const res = (nome, email, salariobase, cargo);
+        const res = CalculadoradeFuncionarios(nome, email, salariobase, cargo);
         
-        expect(res.imc).toBe(imc2);
+        expect(res.cargo).toBe("Gerente novato");
     });
 });
