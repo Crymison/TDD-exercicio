@@ -25,7 +25,7 @@ describe('Atividade 3 ex1', () =>{
         expect(res.verifica).toBe(false);
     });
 
-    test('Verificar Salario DBA >= 2.000,00', () => {
+    test('Verificar Salario DBA senior >= 2.000,00', () => {
         let nome = "Maria";
         let email = "Maria@gmail.com";
         let salariobase = 3500;
@@ -36,7 +36,7 @@ describe('Atividade 3 ex1', () =>{
         expect(res.cargo).toBe("DBA senior");
     });
 
-    test('Verificar Salario DBA < 2.000,00', () => {
+    test('Verificar Salario DBA junior < 2.000,00', () => {
         let nome = "Gustavo";
         let email = "gustavo@gmail.com";
         let salariobase = 1600;
