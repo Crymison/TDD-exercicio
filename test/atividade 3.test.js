@@ -82,6 +82,7 @@ describe('Atividade 3 ex1', () =>{
         const res = CalculadoradeFuncionarios(nome, email, salariobase, cargo);
         
         expect(res.cargo).toBe("Gerente veterano");
+        expect(res.verifica).toBe(true);
     });
 
     test('Verificar Salario Gerente novato< 5.000,00', () => {
@@ -93,5 +94,6 @@ describe('Atividade 3 ex1', () =>{
         const res = CalculadoradeFuncionarios(nome, email, salariobase, cargo);
         
         expect(res.cargo).toBe("Gerente novato");
+        expect(res.verifica).toBe(false);
     });
 });
