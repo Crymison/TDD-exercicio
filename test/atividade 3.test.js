@@ -1,8 +1,7 @@
 const CalculadoradeFuncionarios = require ('../lib/atividade 3');
 
 describe('Atividade 3 ex1', () =>{
-    test('Verificar Salario desenvolvedor >= 3.000,00', () => {
-
+    test('Verificar Salario desenvolvedor senior >= 3.000,00', () => {
         let nome = "Jorel";
         let email = "jorel@gmail.com";
         let salariobase = 3000;
@@ -14,8 +13,7 @@ describe('Atividade 3 ex1', () =>{
         expect(res.verifica).toBe(true);
     });
 
-    test('Verificar Salario desenvolvedor < 3.000,00', () => {
-        
+    test('Verificar Salario desenvolvedor junior < 3.000,00', () => {
         let nome = "Jorel";
         let email = "jorel@gmail.com";
         let salariobase = 2000;
