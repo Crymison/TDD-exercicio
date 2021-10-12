@@ -58,6 +58,7 @@ describe('Atividade 3 ex1', () =>{
         const res = CalculadoradeFuncionarios(nome, email, salariobase, cargo);
         
         expect(res.cargo).toBe("Testador senior");
+        expect(res.verifica).toBe(true);
     });
 
     test('Verificar Salario Testador junior< 2.000,00', () => {
@@ -69,5 +70,6 @@ describe('Atividade 3 ex1', () =>{
         const res = CalculadoradeFuncionarios(nome, email, salariobase, cargo);
         
         expect(res.cargo).toBe("Testador junior");
+        expect(res.verifica).toBe(false);
     });
 });
