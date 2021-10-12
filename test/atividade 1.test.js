@@ -1,3 +1,5 @@
+const CalculadoradeFuncionarios = require ('../lib/atividade 3');
+
 describe('Atividade 3 ex1', () =>{
     test('Verificar Salario desenvolvedor >= 3.000,00', () => {
 
